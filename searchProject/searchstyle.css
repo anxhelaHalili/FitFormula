@@ -1,0 +1,263 @@
+.container {
+    background-color: white;
+    color: black;
+    
+
+}
+
+.btn{
+
+   margin-right: 200px;
+}
+.permbajtja {
+    background: rgb(255, 255, 255);
+    border: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+   
+}
+
+.imazhe {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    height: 180px;
+    width: 320px;
+    z-index: 1;
+
+    
+}
+
+.imazhe img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imazhe span {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    background: orange;
+    padding: 6px;
+    color: rgb(19, 2, 2);
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.imazhe span h4{
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+        line-height: 0;
+        color: white;
+        background-color: orange;
+}
+
+.pershkrime {
+    padding: 1.25rem;
+}
+
+.pershkrime h3 {
+    color: black;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.pershkrime p {
+    color: #747373;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buton {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.buton:hover {
+    background: orange;
+}
+
+a.buton {
+    text-decoration: none;
+    color: white;
+}
+
+.kolona{
+
+    height: 680px;
+    width: 340px;
+    float: left;
+    padding: 10px;
+    margin: 15px;
+    
+}
+
+.rreshta{
+
+    margin-top: 30px;
+    float: left;
+}
+.txt{
+    margin-left: 500px;
+}
+
+.pershkrime h5{
+    
+    font-family: initial;
+    color: rgb(7, 2, 1);
+    font-weight: bolder;
+}
+
+
+input {
+    text-align: center;
+    padding: 0px, 20px;
+    margin-top: 20px;
+    margin-left: 70%;
+    width: 200px;
+    height: 40px;
+    font-size: 15px; 
+    color: black;
+    background-color: white;
+}
+
+
+button {
+    width: 100px;
+    height: 44px;
+    font-size: 18px;
+    color: rgb(2, 0, 0);
+    background-color:orange;
+
+}
+
+button:hover {
+    background: orange;
+}
+
+.banner-area {
+    background-image: url(image/banner.png);
+    background-size: cover;
+    background-position: center center;
+    top: 0px;
+    height: 75vh;
+    width: 100%;
+    position: fixed;
+}
+
+.banner-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: .7;
+    z-index: -1;
+}
+.banner-area h2 {
+    padding-top: 0%;
+    margin: 50px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.banner-area p {
+    font-family: cursive;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.content-area {
+    width:100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    background:seashell;
+    top: 100px;
+   
+
+}
+
+.content-area p {
+    padding: 2% 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.image-details {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 30px;
+  background-image: url(image/img1.jpg);
+  background-color: grey;
+  opacity: .5;
+  z-index: -1;
+}
+
+.container-search {
+    padding: 2% 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-block: inherit;
+    
+    
+}
+
+.article-box{
+    box-shadow: #747373;
+    padding:0% 50px;
+    background-color: rgb(243, 217, 162);
+   
+}
+
+
+h3{
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIET CALCULATOR</title>
+        <meta charset="utf-8">
+        <script src="form.js"></script>
+        <link rel="stylesheet" href="form.css">
+            
+    </head>
+    <body>
+        <div class="spansteps">
+            <span id="tab1"></span>
+            <span id="tab2"></span>
+            <span id="tab3"></span>
+            <span id="tab4"></span>
+            <span id="tab5"></span>
+        </div>
+        <section>  
+            <div class="container">  
+                <form method="post" action="form.php" id="form">  
+                    <div class="step step-1 active">  
+                        <div class="display">
+                            <p id="result2">Calorie Intake</p>
+                            <p id="showresult2"></p>
+                        </div>
+                        <div class="form-group">  
+                            <label for="age">Age</label>  
+                            <input type="number" min="18" max="80" value="18" step="1" id="age" name="age">  
+                        </div>  
+                        <div class="form-group">  
+                            <label for="sex" class="sexlabel">Sex</label>
+                            <select name="sex" id="sex">
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>  
+                        <div class="form-group">  
+                            <label for="age">Calories in a day:</label>  
+                            <div class="row">
+                                <input type="range" min="20" max="4000" value="1000" id="caloriesid" name="caloriesintake" oninput="calories()">
+                                <span id="calories">1000 cal</span> 
+                            </div> 
+                        </div>  
+
+                        <button type="button" class="next-btn">Next</button>  
+
+                    </div>  
+                    <div class="step step-2">  
+                        <div class="display">
+                            <p id="result">20.0</p>
+                            <p id="category">Normal weight</p>
+                        </div>
+                        <div>
+                          <label style>Weight<br>
+                            <input type="range" min="20" max="200" value="20" id="weight" name="weight" oninput="calculate()">
+                            <span id="weight-val">20 kg</span>
+                          </label>
+                        </div>
+                        <div>
+                          <label>Height<br>
+                              <input type="range" min="100" max="250" value="100" id="height" name="height" oninput="calculate()">
+                              <span id="height-val">100 cm</span>
+                          </label>
+                        </div>
+
+                        <button type="button" class="previous-btn">Prev</button>  
+                        <button type="button" class="next-btn">Next</button>  
+
+                    </div>  
+                    <div class="step step-3" > 
+                        <div class="head345">
+                            Select the diet you want to have:
+                        </div>
+                        <div class="body345">  
+
+                            <ul>
+                                <li><input type="checkbox" class="dietbutton" name="anything" id="anything" onclick="onlyOne(this)"/>
+                                  <label for="anything"><img src="anythng.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="dietbutton" name="keto" id="keto" onclick="onlyOne(this)" />
+                                  <label for="keto"><img src="keto.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="dietbutton" name="paleo" id="paleo" onclick="onlyOne(this)" />
+                                  <label for="paleo"><img src="paleo.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="dietbutton" name="med" id="med" onclick="onlyOne(this)" />
+                                  <label for="med"><img src="med.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="dietbutton" name="vag" id="vag" onclick="onlyOne(this)" />
+                                    <label for="vag"><img src="vag.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="dietbutton" name="veg" id="veg" onclick="onlyOne(this)" />
+                                    <label for="veg"><img src="veg.png" /></label>
+                                </li>
+                            </ul>
+
+                        </div>
+                            <button type="button" class="previous-btn" id="dietprev">Prev</button>  
+                            <button type="button" class="next-btn" onclick="checkDiet()">Next</button>
+
+                    </div>  
+                    <div class="step step-4">  
+                        <div class="head345">
+                            Select your body type:
+                        </div>
+                        <div class="body345">  
+                            <ul>
+                                <li><input type="checkbox" class="bodybutton" name="ectomorph" id="ectomorph" onclick="onlyOne2(this)"/>
+                                  <label for="ectomorph"><img src="ectomorph.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="bodybutton" name="mesomorph" id="mesomorph" onclick="onlyOne2(this)" />
+                                  <label for="mesomorph"><img src="mesomorph.png" /></label>
+                                </li>
+                                <li><input type="checkbox" class="bodybutton" name="endomorph" id="endomorph" onclick="onlyOne2(this)" />
+                                  <label for="endomorph"><img src="endomorph.png" /></label>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <button type="button" class="previous-btn" id="bodyprev">Prev</button>  
+                        <button type="button" class="next-btn" onclick="checkBody()">Next</button>  
+
+                    </div>  
+                    <div class="step step-5">  
+                        <div class="head345">
+                            Your ideal weight:
+                        </div>
+                        <div class="body345">
+                            <input type="number" min="0" max="200" id="idealweight" name="idealweight" required> kg
+                        </div>
+
+                        <button type="button" class="previous-btn">Prev</button>  
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>  
+                </div>  
+                </form>  
+            </div>  
+        </section>  
+
+    </body>
+</html>
+
+
+
